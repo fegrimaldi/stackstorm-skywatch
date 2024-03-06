@@ -1,0 +1,8 @@
+---
+name: skywatch
+description: Gets solar and lunar observations from a given spot on earth.
+version: 1.0.0
+author: Fabricio E. Grimaldi
+email: 34732205+fegrimaldi@users.noreply.github.com
+python_versions:
+  - "3"

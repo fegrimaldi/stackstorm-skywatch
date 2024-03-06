@@ -1,0 +1,32 @@
+---
+google_api_key:
+  description: "Google API key"
+  type: "string"
+  secret: true
+  required: true
+here_api_key:
+  description: "Weather Here API Key."
+  type: "string"
+  secret: true
+  required: true
+ipgeo_api_key:
+  description: "IP GeoLocation API Key."
+  type: "string"
+  secret: true
+  required: true
+address:
+  description: "Default Google API formatted addres, e.g. Alpharetta, GA, USA."
+  type: "string"
+  required: true
+latitude:
+  description: "Default location latitude, e.g. 34.3444."
+  type: "string"
+  required: true
+longitude:
+  description: "Default location longitude, e.g. -84.3897."
+  type: "string"
+  required: true
+timezone:
+  description: "Default Location time zone."
+  type: "string"
+  required: true

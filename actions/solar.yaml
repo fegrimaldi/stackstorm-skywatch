@@ -1,0 +1,6 @@
+---
+name: "solar"
+runner_type: "python-script"
+description: "Gets solar observation from a given spot on earth."
+enabled: true
+entry_point: "solar.py"
