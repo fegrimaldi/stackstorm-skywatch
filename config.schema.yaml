@@ -20,11 +20,11 @@ address:
   required: true
 latitude:
   description: "Default location latitude, e.g. 34.3444."
-  type: "string"
+  type: "number"
   required: true
 longitude:
   description: "Default location longitude, e.g. -84.3897."
-  type: "string"
+  type: "number"
   required: true
 timezone:
   description: "Default Location time zone."
