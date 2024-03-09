@@ -1,5 +1,4 @@
 from st2common.runners.base_action import Action
-from location import Location
 
 
 class BaseAction(Action):
@@ -15,4 +14,4 @@ class BaseAction(Action):
             "ipgeo_api_key": self.config["ipgeo_api_key"],
         }
 
-        self.location = Location(self._address, self._keys)
+

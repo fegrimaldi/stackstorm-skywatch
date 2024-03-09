@@ -4,3 +4,9 @@ runner_type: "python-script"
 description: "Gets lunar observation from a given spot on earth."
 enabled: true
 entry_point: "lunar.py"
+parameters:
+  location:
+    type: string
+    description: "Observation site city, region, country."
+    required: true
+    position: 1
