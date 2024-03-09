@@ -23,7 +23,7 @@ class Location:
 
         # TODO Break off if statement
         # re_pattern = "^[-+]?(?:[1-8]?\d(?:\.\d+)?|90(?:\.0+)?),\s*[-+]?(?:180(?:\.0+)?|(?:(?:1[0-7]\d)|(?:[1-9]?\d))(?:\.\d+)?)$"
-        # x = re.search(re_pattern, location)
+        # isLatLng = re.search(re_pattern, location)
 
         geo_url = "https://maps.googleapis.com/maps/api/geocode/json"
         geo_params = {
@@ -121,9 +121,9 @@ class Location:
             "day_length": response_json["results"]["day_length"],
             "sun_altitude": round(solar_astro_res_json["sun_altitude"], 2),
             "sun_azimuth": round(solar_astro_res_json["sun_azimuth"], 2),
-            "sun_distance_km": round(solar_astro_res_json["sun_distance"], 2),
+            "sun_distance_km": round(solar_astro_res_json["sun_distance"]),
             "sun_distance_miles": round(
-                self.km_to_miles(solar_astro_res_json["sun_distance"]), 2
+                self.km_to_miles(solar_astro_res_json["sun_distance"])
             ),
             "sun_distance_au": round(
                 self.km_to_au(solar_astro_res_json["sun_distance"]), 6
@@ -179,4 +179,4 @@ class Location:
         utc_date = datetime.strptime(timestamp, format)
         local_tz = pytz.timezone(timezone)  # Specify your local timezone
         local_dt = utc_date.replace(tzinfo=pytz.utc).astimezone(local_tz)
-        return local_dt.strftime("%Y-%m-%d %H:%M:%S")
+        return local_dt.strftime("%H:%M:%S")

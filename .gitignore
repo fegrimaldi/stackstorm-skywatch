@@ -162,3 +162,5 @@ cython_debug/
 skywatch.yaml
 
 development/
+
+test.py
