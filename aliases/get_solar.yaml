@@ -12,4 +12,4 @@ ack:
   format: "Executing `{{ actionalias.ref }}`, your shortened execution ID is `{{ execution.id[:2] }}..{{ execution.id[-2:] }}`"
   append_url: true
 result:
-  format: "Action completed! The Solar Observation is `{{ execution.result }}`."
+  format: "Action completed! The Solar Observation is `{{ execution.result.result }}`."
