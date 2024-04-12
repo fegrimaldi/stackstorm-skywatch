@@ -2,9 +2,9 @@
 name: "get_solar"
 pack: "skywatch"
 action_ref: "skywatch.solar"
-description: "Runs [g]luware network state assessment on a network device (host)."
+description: "Gets solar observation data for Alpharetta, GA."
 formats:
-  - display: get solar observation for {{location}}
+  - display: get solar skywatch
     representation:
     - get solar skywatch {{location=Atlanta, GA, USA}}
 ack:
@@ -12,4 +12,4 @@ ack:
   format: "Executing `{{ actionalias.ref }}`, your shortened execution ID is `{{ execution.id[:2] }}..{{ execution.id[-2:] }}`"
   append_url: true
 result:
-  format: "Action completed! The Solar Observation is `{{ execution.result.output }}`."
+  format: "Action completed! The Solar Observation is `{{ execution.result }}`."
