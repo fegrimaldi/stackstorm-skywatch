@@ -1,0 +1,15 @@
+---
+name: "get_lunar"
+pack: "skywatch"
+action_ref: "skywatch.lunar"
+description: "Gets lunar observation data for Alpharetta, GA."
+formats:
+  - display: get lunar skywatch
+    representation:
+    - get lunar skywatch {{location=Atlanta, GA, USA}}
+ack:
+  enabled: true
+  format: "Executing `{{ actionalias.ref }}`, your shortened execution ID is `{{ execution.id[:2] }}..{{ execution.id[-2:] }}`"
+  append_url: true
+result:
+  format: "Action completed! The lunar Observation is `{{ execution.result.result }}`."
