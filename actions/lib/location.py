@@ -3,14 +3,14 @@ import requests
 from datetime import datetime
 import pytz
 import time
-import re
+# import re
 
 
 def web_request(url, params):
     try:
         res = requests.get(url=url, params=params)
         return res.json()
-    except:
+    except Exception:
         return False
 
 

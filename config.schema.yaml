@@ -17,7 +17,8 @@ ipgeo_api_key:
 address:
   description: "Default Google API formatted addres, e.g. Alpharetta, GA, USA."
   type: "string"
-  required: true
+  required: false
+  default: "Alpharetta, GA, USA."
 latitude:
   description: "Default location latitude, e.g. 34.3444."
   type: "number"
